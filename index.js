@@ -68,7 +68,8 @@ app.post('/api/assets/send', ({body}, reply) => {
   });
 });
 
-app.listen(80,'0.0.0.0', function(err, address) {
+const PORT = process.env.PORT || 3000;
+app.listen(PORT,'0.0.0.0', function(err, address) {
   if (err) {
     app.log.error(err);
     process.exit(1);
