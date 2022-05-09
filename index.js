@@ -68,7 +68,7 @@ app.post('/api/assets/send', ({body}, reply) => {
   });
 });
 
-app.listen(3001,'0.0.0.0', function(err, address) {
+app.listen(80,'0.0.0.0', function(err, address) {
   if (err) {
     app.log.error(err);
     process.exit(1);
